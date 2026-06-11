@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>СтройГрунт — Благоустройство и земляные работы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#" class="logo">
+        <span class="logo__mark"></span>
+        <span class="logo__text">Строй<span class="logo__accent">Грунт</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#works" class="nav__link">Работы</a>
+        <a href="#stats" class="nav__link">О нас</a>
+        <a href="#reviews" class="nav__link">Отзывы</a>
+        <a href="#order" class="nav__link nav__link--cta">Заказать звонок</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__stripes" aria-hidden="true">
+      <div class="stripe"></div><div class="stripe"></div>
+      <div class="stripe"></div><div class="stripe"></div>
+    </div>
+    <div class="container hero__inner">
+      <p class="hero__eyebrow reveal">Профессиональные земляные и строительные работы</p>
+      <h1 class="hero__title reveal">
+        <span class="hero__line">МЫ СТРОИМ</span>
+        <span class="hero__line hero__line--accent">ОСНОВУ</span>
+        <span class="hero__line">ВАШЕГО ОБЪЕКТА</span>
+      </h1>
+      <p class="hero__sub reveal">Благоустройство · Асфальтирование · Демонтаж · Котлованы · Инертные материалы</p>
+      <div class="hero__actions reveal">
+        <a href="#order" class="btn btn--primary">Получить расчёт</a>
+        <a href="#works" class="btn btn--ghost">Примеры работ</a>
+      </div>
+    </div>
+    <div class="hero__ground" aria-hidden="true">
+      <div class="ground-layer ground-layer--asphalt"></div>
+      <div class="ground-layer ground-layer--gravel"></div>
+      <div class="ground-layer ground-layer--soil"></div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span>прокрутите вниз</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="stats">
+    <div class="container stats__grid">
+      <div class="stat-card">
+        <span class="stat-card__num" data-target="12">0</span>
+        <span class="stat-card__unit">лет</span>
+        <span class="stat-card__label">на рынке</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__num" data-target="340">0</span>
+        <span class="stat-card__unit">+</span>
+        <span class="stat-card__label">объектов сдано</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__num" data-target="95">0</span>
+        <span class="stat-card__unit">%</span>
+        <span class="stat-card__label">клиентов возвращаются</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__num" data-target="80">0</span>
+        <span class="stat-card__unit">+</span>
+        <span class="stat-card__label">единиц техники</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Что мы делаем</span>
+        <h2 class="section-title">НАШИ УСЛУГИ</h2>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 36 L42 36 L38 20 L28 18 L24 10 L16 18 L8 18 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M6 36 L42 36" stroke="currentColor" stroke-width="3"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Благоустройство территорий</h3>
+          <p class="service-card__desc">Комплексное озеленение, устройство дорожек, парковок, детских площадок, дренажных систем.</p>
+          <a href="#order" class="service-card__link">Заказать →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="30" width="40" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 30 L10 16 L38 16 L40 30" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 16 L12 10 L36 10 L36 16" stroke="currentColor" stroke-width="2"/>
+              <circle cx="14" cy="38" r="3" stroke="currentColor" stroke-width="2"/>
+              <circle cx="34" cy="38" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Асфальтирование</h3>
+          <p class="service-card__desc">Устройство асфальтобетонных покрытий любой площади — дороги, стоянки, территории предприятий.</p>
+          <a href="#order" class="service-card__link">Заказать →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="32" height="28" rx="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M4 36 L44 36" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 36 L14 28 L20 28 L20 36" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 8 L4 12 M40 8 L44 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 20 L32 20 M16 24 L28 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Демонтаж зданий</h3>
+          <p class="service-card__desc">Снос и разборка строений любой сложности, вывоз и утилизация строительного мусора.</p>
+          <a href="#order" class="service-card__link">Заказать →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 40 L6 22 L16 10 L42 10 L42 40" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M6 40 L42 40" stroke="currentColor" stroke-width="3"/>
+              <path d="M16 10 L16 40" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 22 L16 22" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Разработка котлованов</h3>
+          <p class="service-card__desc">Экскавация грунта под фундаменты, подземные паркинги, инженерные коммуникации.</p>
+          <a href="#order" class="service-card__link">Заказать →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 38 L8 24 L40 24 L40 38" stroke="currentColor" stroke-width="2"/>
+              <path d="M4 38 L44 38" stroke="currentColor" stroke-width="3"/>
+              <path d="M12 24 C12 18 16 14 24 14 C32 14 36 18 36 24" stroke="currentColor" stroke-width="2"/>
+              <circle cx="24" cy="14" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Поставка инертных материалов</h3>
+          <p class="service-card__desc">Щебень, песок, ПГС, гравий — доставка собственным автопарком в любых объёмах.</p>
+          <a href="#order" class="service-card__link">Заказать →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 40 L6 28 L18 28 L18 40" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M18 34 L34 26 L42 30 L42 40" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M4 40 L44 40" stroke="currentColor" stroke-width="3"/>
+              <path d="M10 28 L10 22 C10 18 14 14 24 14" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 14 C30 14 36 18 38 22" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Замещение грунтов</h3>
+          <p class="service-card__desc">Замена слабых и пучинистых грунтов на качественный дренирующий материал для надёжного основания.</p>
+          <a href="#order" class="service-card__link">Заказать →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section class="works" id="works">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Портфолио</span>
+        <h2 class="section-title">ПРИМЕРЫ РАБОТ</h2>
+      </div>
+      <div class="works__filters reveal">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="asphalt">Асфальт</button>
+        <button class="filter-btn" data-filter="demo">Демонтаж</button>
+        <button class="filter-btn" data-filter="ground">Земляные работы</button>
+        <button class="filter-btn" data-filter="landscape">Благоустройство</button>
+      </div>
+      <div class="works__grid" id="worksGrid">
+
+        <div class="work-card reveal" data-category="asphalt">
+          <div class="work-card__img work-card__img--1">
+            <div class="work-card__overlay">
+              <span class="work-card__tag">Асфальтирование</span>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <h4>Парковка ТЦ «Меридиан»</h4>
+            <p>4 200 м² · 18 дней</p>
+          </div>
+        </div>
+
+        <div class="work-card reveal" data-category="demo">
+          <div class="work-card__img work-card__img--2">
+            <div class="work-card__overlay">
+              <span class="work-card__tag">Демонтаж</span>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <h4>Снос завода «Металлист»</h4>
+            <p>12 000 м² · 45 дней</p>
+          </div>
+        </div>
+
+        <div class="work-card reveal" data-category="ground">
+          <div class="work-card__img work-card__img--3">
+            <div class="work-card__overlay">
+              <span class="work-card__tag">Котлован</span>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <h4>Котлован ЖК «Северный»</h4>
+            <p>8 500 м³ · 22 дня</p>
+          </div>
+        </div>
+
+        <div class="work-card reveal" data-category="landscape">
+          <div class="work-card__img work-card__img--4">
+            <div class="work-card__overlay">
+              <span class="work-card__tag">Благоустройство</span>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <h4>Двор ЖК «Радуга»</h4>
+            <p>3 100 м² · 30 дней</p>
+          </div>
+        </div>
+
+        <div class="work-card reveal" data-category="ground">
+          <div class="work-card__img work-card__img--5">
+            <div class="work-card__overlay">
+              <span class="work-card__tag">Замещение грунтов</span>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <h4>Основание склада «Логопарк»</h4>
+            <p>6 700 м² · 14 дней</p>
+          </div>
+        </div>
+
+        <div class="work-card reveal" data-category="asphalt">
+          <div class="work-card__img work-card__img--6">
+            <div class="work-card__overlay">
+              <span class="work-card__tag">Дорожные работы</span>
+            </div>
+          </div>
+          <div class="work-card__info">
+            <h4>Дорога к промзоне «Северная»</h4>
+            <p>1.2 км · 21 день</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Как мы работаем</span>
+        <h2 class="section-title">ЭТАПЫ СОТРУДНИЧЕСТВА</h2>
+      </div>
+      <div class="process__track">
+        <div class="process__line" aria-hidden="true"></div>
+        <div class="process-step reveal">
+          <div class="process-step__dot"><span>1</span></div>
+          <div class="process-step__body">
+            <h4>Заявка</h4>
+            <p>Оставьте заявку — перезвоним в течение 30 минут</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__dot"><span>2</span></div>
+          <div class="process-step__body">
+            <h4>Выезд и замер</h4>
+            <p>Бесплатный выезд специалиста на объект</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__dot"><span>3</span></div>
+          <div class="process-step__body">
+            <h4>Смета и договор</h4>
+            <p>Фиксированная цена без скрытых доплат</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__dot"><span>4</span></div>
+          <div class="process-step__body">
+            <h4>Выполнение работ</h4>
+            <p>Работаем в срок, фото-отчёт ежедневно</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step__dot"><span>5</span></div>
+          <div class="process-step__body">
+            <h4>Сдача объекта</h4>
+            <p>Подписание акта, гарантия на все виды работ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Отзывы клиентов</span>
+        <h2 class="section-title">ЧТО О НАС ГОВОРЯТ</h2>
+      </div>
+      <div class="reviews__wrapper">
+        <div class="reviews__track" id="reviewsTrack">
+
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Заказывали асфальтирование парковки у нашего ТЦ. Ребята отработали чётко — приехали по графику, всё сделали за 3 недели. Качество покрытия отличное, уже прошло две зимы — никаких трещин.»</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">АК</div>
+              <div>
+                <strong>Александр Козлов</strong>
+                <span>Управляющий ТЦ «Галерея»</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Обращались по демонтажу старого здания. Объём большой, соседние постройки в 5 метрах — работали аккуратно. Вывезли весь мусор, площадку оставили чистой. Рекомендую!»</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">МП</div>
+              <div>
+                <strong>Мария Петрова</strong>
+                <span>Директор по строительству</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Котлован под подземный паркинг нашего ЖК разработали в срок, несмотря на сложный грунт с грунтовыми водами. Geotechnical проблемы решали оперативно. Сотрудничаем постоянно.»</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">ДВ</div>
+              <div>
+                <strong>Дмитрий Васильев</strong>
+                <span>Застройщик ЖК «Горизонт»</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__stars">★★★★☆</div>
+            <p class="review-card__text">«Привозили щебень и ПГС на наш объект — всегда точно в срок, качество материала соответствует паспортам. Цены ниже, чем у конкурентов при том же качестве.»</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">ОС</div>
+              <div>
+                <strong>Ольга Смирнова</strong>
+                <span>Прораб СМУ-7</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Благоустройство двора нашего ЖК — от дренажа до озеленения. Жители очень довольны, во дворе ни одной лужи после дождя. Все работы выполнены аккуратно и в строгом соответствии с проектом.»</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">ИН</div>
+              <div>
+                <strong>Игорь Назаров</strong>
+                <span>Председатель ТСЖ «Уют»</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="reviews__controls">
+          <button class="reviews__btn" id="reviewsPrev" aria-label="Назад">‹</button>
+          <div class="reviews__dots" id="reviewsDots"></div>
+          <button class="reviews__btn" id="reviewsNext" aria-label="Вперёд">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER FORM -->
+  <section class="order" id="order">
+    <div class="container order__inner">
+      <div class="order__text reveal">
+        <span class="section-eyebrow">Бесплатная консультация</span>
+        <h2 class="section-title">ЗАКАЖИТЕ<br>У НАС ЗВОНОК</h2>
+        <p>Оставьте заявку — специалист свяжется с вами в течение 30 минут и ответит на все вопросы. Выезд на объект бесплатно.</p>
+        <ul class="order__benefits">
+          <li>✓ Бесплатный выезд и смета</li>
+          <li>✓ Фиксированная цена в договоре</li>
+          <li>✓ Гарантия на все виды работ</li>
+          <li>✓ Собственный автопарк и техника</li>
+        </ul>
+      </div>
+      <div class="order__form-wrap reveal">
+        <form class="order-form" id="orderForm" novalidate>
+          <div class="form-group">
+            <label for="f-name">Ваше имя</label>
+            <input type="text" id="f-name" name="name" placeholder="Иван Иванов" required />
+          </div>
+          <div class="form-group">
+            <label for="f-contact">Телефон / Email / Telegram</label>
+            <input type="text" id="f-contact" name="contact" placeholder="+7 (___) ___, @username или email" required />
+          </div>
+          <div class="form-group">
+            <label for="f-service">Вид работ</label>
+            <select id="f-service" name="service">
+              <option value="">— Выберите услугу —</option>
+              <option>Благоустройство территорий</option>
+              <option>Асфальтирование</option>
+              <option>Демонтаж зданий</option>
+              <option>Разработка котлованов</option>
+              <option>Поставка инертных материалов</option>
+              <option>Замещение грунтов</option>
+              <option>Несколько услуг</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-msg">Описание объекта / задачи</label>
+            <textarea id="f-msg" name="message" rows="4" placeholder="Расскажите об объекте: площадь, адрес, сроки, особые условия..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+            <span class="btn-text">Отправить заявку</span>
+            <span class="btn-loader" hidden>...</span>
+          </button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+          <div class="form-success" id="formSuccess" hidden>
+            <div class="form-success__icon">✓</div>
+            <h4>Заявка отправлена!</h4>
+            <p>Свяжемся с вами в течение 30 минут</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo">
+          <span class="logo__mark"></span>
+          <span class="logo__text">Строй<span class="logo__accent">Грунт</span></span>
+        </a>
+        <p>Профессиональные земляные и строительные работы с 2012 года</p>
+      </div>
+      <div class="footer__links">
+        <h5>Услуги</h5>
+        <a href="#services">Благоустройство</a>
+        <a href="#services">Асфальтирование</a>
+        <a href="#services">Демонтаж</a>
+        <a href="#services">Котлованы</a>
+        <a href="#services">Инертные материалы</a>
+        <a href="#services">Замещение грунтов</a>
+      </div>
+      <div class="footer__contact">
+        <h5>Контакты</h5>
+        <a href="tel:+78001234567">8 800 123-45-67</a>
+        <a href="mailto:info@stroygrunt.ru">info@stroygrunt.ru</a>
+        <a href="https://t.me/stroygrunt" target="_blank">Telegram: @stroygrunt</a>
+        <p class="footer__address">г. Екатеринбург, ул. Строительная, 1</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2024 СтройГрунт. Все права защищены.</span>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/bot.js"></script>
+</body>
+</html>
